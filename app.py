@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Mapa de microservicios y sus rutas
 microservicios = {
-    "sumar": "http://localhost:5001/suma",
+    "sumar": "https://sumamicroservicios-d3fjegbua6c2d7dc.canadacentral-01.azurewebsites.net/suma",
     "restar": "http://localhost:5002/resta",
     "multiplicar": "http://localhost:5003/multiplicacion",
     "dividir": "http://localhost:5004/division"
