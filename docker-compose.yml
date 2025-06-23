@@ -1,0 +1,31 @@
+version: '3'
+services:
+  orquestador:
+    build: ./orquestador
+    ports:
+      - "5000:5000"
+    depends_on:
+      - sumar
+      - restar
+      - multiplicar
+      - dividir
+
+  sumar:
+    build: ./sumar
+    ports:
+      - "5001:5001"
+
+  restar:
+    build: ./restar
+    ports:
+      - "5002:5002"
+
+  multiplicar:
+    build: ./multiplicar
+    ports:
+      - "5003:5003"
+
+  dividir:
+    build: ./dividir
+    ports:
+      - "5004:5004"
